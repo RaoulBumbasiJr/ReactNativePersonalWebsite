@@ -1,15 +1,18 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { NativeBaseProvider } from "native-base";
+import { View } from "native-base";
 import { Navigation } from "./src/components/Navigation";
 import { Home } from "./src/components/Home";
 import { Portfolio } from "./src/components/Portfolio";
 
 export default function App() {
   return (
-    <View>
-      <Navigation />
-      <Home />
-      <Portfolio />
-    </View>
+    <NativeBaseProvider>
+      <View>
+        <Navigation />
+        <Home />
+        <Portfolio />
+      </View>
+    </NativeBaseProvider>
   );
 }
