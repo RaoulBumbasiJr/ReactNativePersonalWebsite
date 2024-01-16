@@ -14,7 +14,9 @@ export const Home = () => {
       minH={"100vh"}
     >
       <Text fontSize={50}>hello, my name is raoul bumbasi jr :)</Text>
-      <Text>i can code in html, css, javascript, and react native</Text>
+      <Text fontSize={40}>
+        i can code in html, css, javascript, and react native
+      </Text>
     </View>
   );
 };
