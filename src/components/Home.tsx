@@ -13,7 +13,9 @@ export const Home = () => {
       width={"100%"}
       minH={"100vh"}
     >
-      <Text fontSize={50}>hello, my name is raoul bumbasi jr :)</Text>
+      <Text fontSize={50} fontStyle={"bold"}>
+        hello, my name is raoul bumbasi jr :)
+      </Text>
       <Text fontSize={40}>
         i can code in html, css, javascript, and react native
       </Text>
