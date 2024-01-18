@@ -13,10 +13,10 @@ export const Home = () => {
       width={"100%"}
       minH={"100vh"}
     >
-      <Text fontSize={50} fontStyle={"bold"}>
+      <Text fontSize={50} fontWeight={"bold"}>
         hello, my name is raoul bumbasi jr :)
       </Text>
-      <Text fontSize={40}>
+      <Text fontSize={40} fontWeight={"bold"}>
         i can code in html, css, javascript, and react native
       </Text>
     </View>
