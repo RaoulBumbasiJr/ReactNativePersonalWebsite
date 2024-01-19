@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text } from "native-base";
+import { View, Text, Image, Box } from "native-base";
+import htmlLogo from "../assets/images/htmlLogo.png";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       <Text fontSize={40} fontWeight={"bold"}>
         i can code in html, css, javascript, and react native
       </Text>
+      <Image source={htmlLogo} alt="htmlLogo" />
     </View>
   );
 };
