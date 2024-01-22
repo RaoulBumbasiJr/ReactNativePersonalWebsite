@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image, Box } from "native-base";
 import htmlLogo from "../assets/images/htmlLogo.png";
 import cssLogo from "../assets/images/cssLogo.png";
+import jsLogo from "../assets/images/jsLogo.png";
 
 export const Home = () => {
   return (
@@ -22,7 +23,8 @@ export const Home = () => {
         i can code in html, css, javascript, and react native
       </Text>
       <Image source={htmlLogo} alt="htmlLogo" />
-      <Image source={cssLogo} alt="htmlLogo" />
+      <Image source={cssLogo} alt="cssLogo" />
+      <Image source={jsLogo} alt="jsLogo" />
     </View>
   );
 };
