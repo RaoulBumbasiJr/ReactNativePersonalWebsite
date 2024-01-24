@@ -4,6 +4,7 @@ import htmlLogo from "../assets/images/htmlLogo.png";
 import cssLogo from "../assets/images/cssLogo.png";
 import jsLogo from "../assets/images/jsLogo.png";
 import reactLogo from "../assets/images/reactLogo.png";
+import wordpressLogo from "../assets/images/wordpressLogo.png";
 
 export const Home = () => {
   return (
@@ -27,6 +28,7 @@ export const Home = () => {
       <Image source={cssLogo} alt="cssLogo" />
       <Image source={jsLogo} alt="jsLogo" />
       <Image source={reactLogo} alt="reactLogo" />
+      <Image source={wordpressLogo} alt="reactLogo" />
     </View>
   );
 };
