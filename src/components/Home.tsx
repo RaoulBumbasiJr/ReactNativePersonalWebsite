@@ -10,27 +10,28 @@ import adobeLogo from "../assets/images/adobeLogo.png";
 export const Home = () => {
   return (
     <View
-      alignItems={"center"}
-      justifyContent={"center"}
-      alignContent={"center"}
-      alignSelf={"flex-start"}
       flex={0}
       position={"relative"}
       width={"100%"}
-      minH={"100vh"}
+      minH={"50vh"}
+      backgroundColor={"black"}
     >
-      <Text fontSize={50} fontWeight={"bold"}>
-        hello, my name is raoul bumbasi jr :)
-      </Text>
-      <Text fontSize={40} fontWeight={"bold"}>
-        i can code in html, css, javascript, and react native
-      </Text>
-      <Image source={htmlLogo} alt="htmlLogo" />
-      <Image source={cssLogo} alt="cssLogo" />
-      <Image source={jsLogo} alt="jsLogo" />
-      <Image source={reactLogo} alt="reactLogo" />
-      <Image source={wordpressLogo} alt="wordpressLogo" />
-      <Image source={adobeLogo} alt="adobeLogo" />
+      <Box
+        backgroundColor={"white"}
+        alignItems={"left"}
+        justifyContent={"left"}
+        alignContent={"left"}
+        flex={1}
+        paddingTop={200}
+      >
+        <Text fontSize={50} fontWeight={"bold"} color={"black"}>
+          About me
+        </Text>
+        <Text fontSize={40} fontWeight={"bold"} color={"black"} width={"50%"}>
+          front-end website and mobile development with experience in React
+          Native, Figma, Adobe, and more
+        </Text>
+      </Box>
     </View>
   );
 };
