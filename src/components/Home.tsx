@@ -27,10 +27,12 @@ export const Home = () => {
         <Text fontSize={50} fontWeight={"bold"} color={"black"}>
           About me
         </Text>
-        <Text fontSize={40} fontWeight={"bold"} color={"black"} width={"50%"}>
-          front-end website and mobile development with experience in React
-          Native, Figma, Adobe, and more
-        </Text>
+        <Text
+          fontSize={40}
+          fontWeight={"bold"}
+          color={"black"}
+          width={"50%"}
+        ></Text>
       </Box>
     </View>
   );
