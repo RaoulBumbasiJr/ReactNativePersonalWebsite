@@ -32,6 +32,7 @@ export const Home = () => {
           Native, Figma, Adobe, and more
         </Text>
       </Box>
+      <Box backgroundColor={"blue"} flex={1}></Box>
     </View>
   );
 };
