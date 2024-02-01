@@ -33,7 +33,7 @@ export const Home = () => {
         </Text>
       </Box>
       <Box backgroundColor={"blue"} flex={1}>
-        github link
+        github link - https://github.com/RaoulBumbasiJr
       </Box>
     </View>
   );
