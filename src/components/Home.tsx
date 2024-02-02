@@ -15,6 +15,7 @@ export const Home = () => {
       width={"100%"}
       minH={"50vh"}
       backgroundColor={"black"}
+      flexDirection={"row"}
     >
       <Box
         backgroundColor={"white"}
@@ -23,17 +24,26 @@ export const Home = () => {
         alignContent={"left"}
         flex={1}
         paddingTop={200}
+        borderWidth={5}
+        borderColor={"pink"}
       >
         <Text fontSize={50} fontWeight={"bold"} color={"black"}>
           About me
         </Text>
-        <Text fontSize={40} fontWeight={"bold"} color={"black"} width={"50%"}>
+        <Text fontSize={40} fontWeight={"bold"} color={"black"} width={"70%"}>
           front-end website and mobile development with experience in React
           Native, Figma, Adobe, and more
         </Text>
       </Box>
-      <Box backgroundColor={"blue"} flex={1}>
-        github link - https://github.com/RaoulBumbasiJr
+      <Box
+        backgroundColor={"gray"}
+        flex={1}
+        alignItems={"center"}
+        justifyContent={"center"}
+        alignContent={"center"}
+      >
+        <Text color={"white"}>Github link</Text>
+        <Text color={"white"}>https://github.com/RaoulBumbasiJr</Text>
       </Box>
     </View>
   );
