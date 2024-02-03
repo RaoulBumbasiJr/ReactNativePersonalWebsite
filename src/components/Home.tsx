@@ -42,7 +42,9 @@ export const Home = () => {
         justifyContent={"center"}
         alignContent={"center"}
       >
-        <Text color={"white"}>Github link</Text>
+        <Text color={"white"} fontSize={50}>
+          Github link
+        </Text>
         <Text color={"white"}>https://github.com/RaoulBumbasiJr</Text>
       </Box>
     </View>
