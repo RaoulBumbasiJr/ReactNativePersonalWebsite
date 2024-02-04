@@ -13,19 +13,16 @@ export const Home = () => {
       flex={0}
       position={"relative"}
       width={"100%"}
-      minH={"50vh"}
+      minH={"60vh"}
       backgroundColor={"black"}
       flexDirection={"row"}
     >
       <Box
         backgroundColor={"white"}
-        alignItems={"left"}
-        justifyContent={"left"}
-        alignContent={"left"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        alignContent={"center"}
         flex={1}
-        paddingTop={200}
-        borderWidth={5}
-        borderColor={"pink"}
       >
         <Text fontSize={50} fontWeight={"bold"} color={"black"}>
           About me
