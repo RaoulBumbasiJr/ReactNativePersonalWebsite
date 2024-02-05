@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -10,6 +10,8 @@ import {
 import { Linking } from "react-native";
 
 export const Home = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleOpenGitHub = () => {
     Linking.openURL("https://github.com/RaoulBumbasiJr"); // Replace with your GitHub URL
   };
@@ -46,8 +48,12 @@ export const Home = () => {
           justifyContent={"center"}
           alignContent={"center"}
         >
-          <Pressable onPress={handleOpenGitHub}>
-            <Text color={"white"} fontSize={50}>
+          <Pressable
+            onPress={handleOpenGitHub}
+            onHoverIn={() => setIsHovered(true)}
+            onHoverOut={() => setIsHovered(false)}
+          >
+            <Text color={isHovered ? "purple.500" : "white"} fontSize={50}>
               Github link
             </Text>
           </Pressable>
