@@ -27,16 +27,15 @@ export const Home = () => {
         flexDirection={"row"}
       >
         <Box
-          backgroundColor={"white"}
           alignItems={"center"}
           justifyContent={"center"}
           alignContent={"center"}
           flex={1}
         >
-          <Text fontSize={50} fontWeight={"bold"} color={"black"}>
+          <Text fontSize={50} fontWeight={"bold"} color={"white"}>
             About me
           </Text>
-          <Text fontSize={40} fontWeight={"bold"} color={"black"} width={"70%"}>
+          <Text fontSize={40} fontWeight={"bold"} color={"white"} width={"70%"}>
             Front-end website and mobile development with experience in React
             Native, Figma, Adobe, and more
           </Text>
