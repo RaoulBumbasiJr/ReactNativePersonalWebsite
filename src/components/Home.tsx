@@ -37,7 +37,7 @@ export const Home = () => {
           </Text>
           <Text fontSize={40} fontWeight={"bold"} color={"white"} width={"70%"}>
             Front-end website and mobile development with experience in React
-            Native, Figma, Adobe, and more
+            Native, Figma, Adobe, and more :)
           </Text>
         </Box>
         <Box
