@@ -8,12 +8,13 @@ import {
   Pressable,
 } from "native-base";
 import { Linking } from "react-native";
+import skateapp from "../assets/images/skateapp.png";
 
 export const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleOpenGitHub = () => {
-    Linking.openURL("https://github.com/RaoulBumbasiJr"); // Replace with your GitHub URL
+    Linking.openURL("https://github.com/RaoulBumbasiJr");
   };
 
   return (
@@ -27,10 +28,10 @@ export const Home = () => {
         flexDirection={"row"}
       >
         <Box
+          flex={1}
           alignItems={"center"}
           justifyContent={"center"}
-          alignContent={"center"}
-          flex={1}
+          padding={4}
         >
           <Text fontSize={50} fontWeight={"bold"} color={"white"}>
             About me
@@ -40,12 +41,13 @@ export const Home = () => {
             Native, Figma, Adobe, and more :)
           </Text>
         </Box>
+
         <Box
           backgroundColor={"gray"}
           flex={1}
           alignItems={"center"}
           justifyContent={"center"}
-          alignContent={"center"}
+          padding={4}
         >
           <Pressable
             onPress={handleOpenGitHub}

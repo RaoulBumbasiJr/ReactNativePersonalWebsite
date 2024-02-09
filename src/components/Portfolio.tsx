@@ -1,14 +1,29 @@
 import React from "react";
-import { View, Box, Text } from "native-base";
+import { View, Box, Text, Image } from "native-base";
 
 export const Portfolio = () => {
   const boxes = [
-    { label: "SkateApp Website" },
-    { label: "SuperApps Website" },
-    { label: "TravelBlog Website" },
-    { label: "E-commerce App" },
-    { label: "Portfolio Site" },
-    { label: "WeatherApp" },
+    {
+      label: "SkateApp Website",
+      image: require("../assets/images/skateapp.png"),
+    },
+    {
+      label: "SuperApps Website",
+      image: require("../assets/images/skateapp.png"),
+    },
+    {
+      label: "TravelBlog Website",
+      image: require("../assets/images/skateapp.png"),
+    },
+    {
+      label: "E-commerce App",
+      image: require("../assets/images/skateapp.png"),
+    },
+    {
+      label: "Portfolio Site",
+      image: require("../assets/images/skateapp.png"),
+    },
+    { label: "WeatherApp", image: require("../assets/images/skateapp.png") },
   ];
 
   return (
@@ -27,11 +42,21 @@ export const Portfolio = () => {
               <Box
                 borderColor={"pink"}
                 borderWidth={1}
-                width={"100%"} // Ensure the box takes the full width of its container
-                height={"40vh"} // Adjust the height to your preference
-                backgroundColor={"white"}
+                width={"100%"}
+                height={"40vh"}
                 margin={2}
-              />
+                alignItems="center"
+                justifyContent="center"
+              >
+                {/* Image */}
+                <Image
+                  source={box.image}
+                  alt={box.label}
+                  width={"100%"}
+                  height={"100%"}
+                  resizeMode="cover"
+                />
+              </Box>
               {/* Label */}
               <Text
                 fontSize="lg"
