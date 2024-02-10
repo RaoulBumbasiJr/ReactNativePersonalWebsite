@@ -38,7 +38,6 @@ export const Portfolio = () => {
         <View key={rowIndex} flexDirection="row" justifyContent="space-around">
           {boxes.slice(rowIndex * 3, rowIndex * 3 + 3).map((box, index) => (
             <View key={index} style={{ alignItems: "center", width: "30%" }}>
-              {/* Box */}
               <Box
                 borderColor={"pink"}
                 borderWidth={1}
@@ -48,7 +47,6 @@ export const Portfolio = () => {
                 alignItems="center"
                 justifyContent="center"
               >
-                {/* Image */}
                 <Image
                   source={box.image}
                   alt={box.label}
@@ -57,7 +55,6 @@ export const Portfolio = () => {
                   resizeMode="cover"
                 />
               </Box>
-              {/* Label */}
               <Text
                 fontSize="lg"
                 color="white"
