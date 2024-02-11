@@ -8,7 +8,6 @@ import {
   Pressable,
 } from "native-base";
 import { Linking } from "react-native";
-import skateapp from "../assets/images/skateapp.png";
 
 export const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
