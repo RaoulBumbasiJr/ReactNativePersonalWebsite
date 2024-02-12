@@ -1,12 +1,5 @@
-import React from "react";
-import {
-  View,
-  Box,
-  Text,
-  Image,
-  PresenceTransition,
-  Pressable,
-} from "native-base";
+import React, { useState } from "react";
+import { View, Box, Text, Image, Pressable } from "native-base";
 import { Linking } from "react-native";
 
 export const Portfolio = () => {
@@ -22,11 +15,12 @@ export const Portfolio = () => {
       url: "https://www.superapps.com/",
     },
     {
-      label: "TravelBlog Website",
-      image: require("../assets/images/skateapp.png"),
+      label: "CHRR Website",
+      image: require("../assets/images/chrr.png"),
+      url: "https://homerepairca.com/",
     },
     {
-      label: "E-commerce App",
+      label: "SkateApp Mobile",
       image: require("../assets/images/skateapp.png"),
     },
     {
@@ -37,8 +31,14 @@ export const Portfolio = () => {
   ];
 
   const handleOpenURL = (url) => {
-    Linking.openURL(url);
+    if (url) {
+      Linking.openURL(url);
+    }
   };
+
+  // Track the index of the currently hovered box
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
     <View
       flex={0}
@@ -47,52 +47,55 @@ export const Portfolio = () => {
       minH={"100vh"}
       backgroundColor={"black"}
     >
-      <Text color={"white"} textAlign={"center"}>
+      <Text color={"white"} textAlign={"center"} fontSize={50}>
         Projects
       </Text>
 
       {Array.from({ length: 2 }).map((_, rowIndex) => (
         <View key={rowIndex} flexDirection="row" justifyContent="space-around">
-          {boxes.slice(rowIndex * 3, rowIndex * 3 + 3).map((box, index) => (
-            <View key={index} style={{ alignItems: "center", width: "30%" }}>
-              <Pressable
-                borderColor={"white"}
-                borderWidth={3}
-                width={"100%"}
-                height={"40vh"}
-                margin={2}
-                alignItems="center"
-                justifyContent="center"
-                onPress={() => handleOpenURL(box.url)}
-              >
-                <Box
-                  borderColor={"white"}
-                  borderWidth={3}
-                  width={"100%"}
-                  height={"40vh"}
+          {boxes.slice(rowIndex * 3, rowIndex * 3 + 3).map((box, index) => {
+            const isHovered = hoveredIndex === index + rowIndex * 3;
+
+            return (
+              <View key={index} style={{ alignItems: "center", width: "30%" }}>
+                <Pressable
                   margin={2}
                   alignItems="center"
                   justifyContent="center"
+                  onPress={() => handleOpenURL(box.url)}
+                  onHoverIn={() => setHoveredIndex(index + rowIndex * 3)}
+                  onHoverOut={() => setHoveredIndex(null)}
+                  width={isHovered ? "102%" : "100%"}
+                  height={"40vh"}
                 >
-                  <Image
-                    source={box.image}
-                    alt={box.label}
+                  <Box
+                    borderWidth={2}
+                    borderColor={"white"}
                     width={"100%"}
-                    height={"100%"}
-                    resizeMode="cover"
-                  />
-                </Box>
-              </Pressable>
-              <Text
-                fontSize="lg"
-                color="white"
-                textAlign="center"
-                marginTop={2}
-              >
-                {box.label}
-              </Text>
-            </View>
-          ))}
+                    alignItems="center"
+                    justifyContent="center"
+                    height={isHovered ? "42vh" : "40vh"}
+                  >
+                    <Image
+                      source={box.image}
+                      alt={box.label}
+                      width={"100%"}
+                      height={"100%"}
+                      resizeMode="cover"
+                    />
+                  </Box>
+                </Pressable>
+                <Text
+                  fontSize="lg"
+                  color="white"
+                  textAlign="center"
+                  marginTop={2}
+                >
+                  {box.label}
+                </Text>
+              </View>
+            );
+          })}
         </View>
       ))}
     </View>
