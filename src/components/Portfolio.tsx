@@ -24,7 +24,7 @@ export const Portfolio = () => {
       image: require("../assets/images/skateapp.png"),
     },
     {
-      label: "Portfolio Site",
+      label: "Pokedex App",
       image: require("../assets/images/skateapp.png"),
     },
     { label: "WeatherApp", image: require("../assets/images/skateapp.png") },
