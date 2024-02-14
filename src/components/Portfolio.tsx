@@ -21,7 +21,7 @@ export const Portfolio = () => {
     },
     {
       label: "SkateApp Mobile",
-      image: require("../assets/images/skateapp.png"),
+      image: require("../assets/images/skateappMobile.png"),
     },
     {
       label: "Pokedex App",
