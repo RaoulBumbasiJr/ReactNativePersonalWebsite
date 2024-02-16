@@ -25,9 +25,9 @@ export const Portfolio = () => {
     },
     {
       label: "Pokedex App",
-      image: require("../assets/images/skateapp.png"),
+      image: require("../assets/images/pokedexapp.png"),
     },
-    { label: "WeatherApp", image: require("../assets/images/skateapp.png") },
+    { label: "Blog App", image: require("../assets/images/skateapp.png") },
   ];
 
   const handleOpenURL = (url) => {
