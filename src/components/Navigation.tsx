@@ -1,43 +1,50 @@
 import React from "react";
-import { View, Text, Box, Button, Pressable, HStack } from "native-base";
+import { View, Box, Pressable, HStack, Text } from "native-base";
 
 export const Navigation = () => {
   return (
     <View backgroundColor={"black"} width={"100%"}>
       <Box>
-        <Pressable
-          textAlign={"left"}
-          fontSize={50}
-          paddingLeft={50}
-          color={"white"}
-          paddingTop={50}
-        >
-          Raoul Bumbasi Jr
+        <Pressable>
+          <Text
+            textAlign={"left"}
+            fontSize={50}
+            paddingLeft={50}
+            color={"white"}
+          >
+            Raoul Bumbasi Jr
+          </Text>
         </Pressable>
-        <HStack textAlign={"right"}>
-          <Pressable
-            textAlign={"right"}
-            color={"white"}
-            fontSize={30}
-            paddingRight={5}
-          >
-            about
+        <HStack justifyContent={"right"}>
+          <Pressable>
+            <Text
+              textAlign={"right"}
+              color={"white"}
+              fontSize={30}
+              paddingRight={5}
+            >
+              home
+            </Text>
           </Pressable>
-          <Pressable
-            textAlign={"right"}
-            color={"white"}
-            fontSize={30}
-            paddingRight={5}
-          >
-            about
+          <Pressable>
+            <Text
+              textAlign={"right"}
+              color={"white"}
+              fontSize={30}
+              paddingRight={5}
+            >
+              work
+            </Text>
           </Pressable>
-          <Pressable
-            textAlign={"right"}
-            color={"white"}
-            fontSize={30}
-            paddingRight={5}
-          >
-            about
+          <Pressable>
+            <Text
+              textAlign={"right"}
+              color={"white"}
+              fontSize={30}
+              paddingRight={5}
+            >
+              contact
+            </Text>
           </Pressable>
         </HStack>
       </Box>
