@@ -1,62 +1,61 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   View,
   Text,
   Image,
   Box,
   NativeBaseProvider,
-  Pressable,
+  Divider,
 } from "native-base";
-import { Linking } from "react-native";
 
 export const Home = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleOpenGitHub = () => {
-    Linking.openURL("https://github.com/RaoulBumbasiJr");
-  };
-
   return (
     <NativeBaseProvider>
-      <View
-        flex={0}
-        position={"relative"}
-        width={"100%"}
-        minH={"60vh"}
-        backgroundColor={"black"}
-        flexDirection={"row"}
-      >
-        <Box
-          flex={1}
-          alignItems={"center"}
-          justifyContent={"center"}
-          padding={4}
-        >
-          <Text fontSize={50} fontWeight={"bold"} color={"white"}>
-            About me
-          </Text>
-          <Text fontSize={40} fontWeight={"bold"} color={"white"} width={"70%"}>
-            Front-end website and mobile development with experience in React
-            Native, Figma, Adobe, and more :)
-          </Text>
-        </Box>
-
-        <Box
-          backgroundColor={"gray"}
-          flex={1}
-          alignItems={"center"}
-          justifyContent={"center"}
-          padding={4}
-        >
-          <Pressable
-            onPress={handleOpenGitHub}
-            onHoverIn={() => setIsHovered(true)}
-            onHoverOut={() => setIsHovered(false)}
+      <View flex={1}>
+        {/* Use Box to Layer Components */}
+        <Box position="relative" width="100%" height="50vh">
+          {/* Background Image */}
+          <Image
+            source={require("../assets/images/homeBackground.jpg")}
+            alt="Background"
+            width="100%"
+            height="100%"
+            resizeMode="cover"
+          />
+          {/* Overlay Content */}
+          <Box
+            position="absolute"
+            top={0}
+            left={0}
+            right={0}
+            bottom={0}
+            justifyContent="center"
+            alignItems="center"
           >
-            <Text color={isHovered ? "purple.500" : "white"} fontSize={50}>
-              Github link
+            <Text
+              fontFamily={"Roboto Condensed"}
+              fontSize={80}
+              fontWeight="300"
+              color="white"
+            >
+              RAOUL BUMBASI JR
             </Text>
-          </Pressable>
+            <Text
+              fontFamily={"Roboto Condensed"}
+              fontSize={80}
+              fontWeight="700"
+              color="white"
+            >
+              WEBSITE DEVELOPER
+            </Text>
+            <Divider
+              bg="white"
+              thickness="2"
+              width="50%"
+              marginTop={2}
+              alignSelf="center"
+            />
+          </Box>
         </Box>
       </View>
     </NativeBaseProvider>

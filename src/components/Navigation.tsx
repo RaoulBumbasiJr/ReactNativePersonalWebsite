@@ -6,7 +6,12 @@ export const Navigation = () => {
     <View backgroundColor={"#323232"} width={"100%"} justifyContent={"center"}>
       <HStack justifyContent={"center"} padding={5} alignItems="center">
         <Pressable>
-          <Text fontSize={30} paddingRight={50} color={"white"}>
+          <Text
+            fontSize={30}
+            paddingRight={50}
+            color={"white"}
+            fontFamily={"Roboto Condensed"}
+          >
             Raoul Bumbasi Jr
           </Text>
         </Pressable>
@@ -19,7 +24,13 @@ export const Navigation = () => {
         />
 
         <Pressable>
-          <Text color={"white"} fontSize={30} textAlign={"center"}>
+          <Text
+            color={"white"}
+            fontSize={30}
+            textAlign={"center"}
+            fontFamily={"Roboto Condensed"}
+            fontWeight={"300"}
+          >
             Home
           </Text>
         </Pressable>
@@ -32,7 +43,12 @@ export const Navigation = () => {
           alignSelf="center"
         />
         <Pressable>
-          <Text color={"white"} fontSize={30}>
+          <Text
+            color={"white"}
+            fontSize={30}
+            fontFamily={"Roboto Condensed"}
+            fontWeight={"300"}
+          >
             Work
           </Text>
         </Pressable>
@@ -45,7 +61,12 @@ export const Navigation = () => {
           alignSelf="center"
         />
         <Pressable>
-          <Text color={"white"} fontSize={30}>
+          <Text
+            color={"white"}
+            fontSize={30}
+            fontFamily={"Roboto Condensed"}
+            fontWeight={"300"}
+          >
             Contact
           </Text>
         </Pressable>

@@ -16,7 +16,6 @@ export default function App() {
         <View>
           <Navigation />
           <Home />
-          <Portfolio />
         </View>
       </ScrollView>
     </NativeBaseProvider>
