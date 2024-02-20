@@ -6,6 +6,7 @@ import {
   Box,
   NativeBaseProvider,
   Divider,
+  Pressable,
 } from "native-base";
 
 export const Home = () => {
@@ -55,6 +56,25 @@ export const Home = () => {
               marginTop={2}
               alignSelf="center"
             />
+            <Text
+              fontFamily={"Roboto Condensed"}
+              color="white"
+              fontSize={20}
+              paddingTop={10}
+            >
+              html/css, javascript, react, adobe, mongodb, express, and node.js
+            </Text>
+            <Pressable>
+              <Box borderWidth={5} borderColor={"white"} marginTop={5}>
+                <Text
+                  fontFamily={"Roboto Condensed"}
+                  color="white"
+                  fontSize={20}
+                >
+                  SEE MY WORK
+                </Text>
+              </Box>
+            </Pressable>
           </Box>
         </Box>
       </View>
