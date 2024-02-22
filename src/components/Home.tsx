@@ -70,6 +70,7 @@ export const Home = () => {
                   fontFamily={"Roboto Condensed"}
                   color="white"
                   fontSize={20}
+                  paddingX={5}
                 >
                   SEE MY WORK
                 </Text>
