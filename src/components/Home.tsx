@@ -61,11 +61,12 @@ export const Home = () => {
               color="white"
               fontSize={20}
               paddingTop={10}
+              paddingBottom={5}
             >
               html/css, javascript, react, adobe, mongodb, express, and node.js
             </Text>
-            <Pressable>
-              <Box borderWidth={5} borderColor={"white"} marginTop={5}>
+            <Pressable _hover={{ background: "#808080" }}>
+              <Box borderWidth={5} borderColor={"white"}>
                 <Text
                   fontFamily={"Roboto Condensed"}
                   color="white"

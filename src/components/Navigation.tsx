@@ -23,16 +23,22 @@ export const Navigation = () => {
           alignSelf="center"
         />
 
-        <Pressable>
-          <Text
-            color={"white"}
-            fontSize={30}
-            textAlign={"center"}
-            fontFamily={"Roboto Condensed"}
-            fontWeight={"300"}
-          >
-            Home
-          </Text>
+        <Pressable
+          _hover={{
+            bg: "transparent", // Optional: Adjust background if needed
+          }}
+        >
+          {({ isHovered }) => (
+            <Text
+              color={isHovered ? "#c7aa8b" : "white"} // Change text color on hover
+              fontSize={30}
+              textAlign={"center"}
+              fontFamily={"Roboto Condensed"}
+              fontWeight={"300"}
+            >
+              Home
+            </Text>
+          )}
         </Pressable>
 
         <Box
@@ -42,15 +48,22 @@ export const Navigation = () => {
           marginX={2}
           alignSelf="center"
         />
-        <Pressable>
-          <Text
-            color={"white"}
-            fontSize={30}
-            fontFamily={"Roboto Condensed"}
-            fontWeight={"300"}
-          >
-            Work
-          </Text>
+        <Pressable
+          _hover={{
+            bg: "transparent", // Optional: Adjust background if needed
+          }}
+        >
+          {({ isHovered }) => (
+            <Text
+              color={isHovered ? "#c7aa8b" : "white"} // Change text color on hover
+              fontSize={30}
+              textAlign={"center"}
+              fontFamily={"Roboto Condensed"}
+              fontWeight={"300"}
+            >
+              Work
+            </Text>
+          )}
         </Pressable>
 
         <Box
@@ -60,15 +73,22 @@ export const Navigation = () => {
           marginX={2}
           alignSelf="center"
         />
-        <Pressable>
-          <Text
-            color={"white"}
-            fontSize={30}
-            fontFamily={"Roboto Condensed"}
-            fontWeight={"300"}
-          >
-            Contact
-          </Text>
+        <Pressable
+          _hover={{
+            bg: "transparent", // Optional: Adjust background if needed
+          }}
+        >
+          {({ isHovered }) => (
+            <Text
+              color={isHovered ? "#c7aa8b" : "white"} // Change text color on hover
+              fontSize={30}
+              textAlign={"center"}
+              fontFamily={"Roboto Condensed"}
+              fontWeight={"300"}
+            >
+              Contact
+            </Text>
+          )}
         </Pressable>
         <Box
           width="1px"
