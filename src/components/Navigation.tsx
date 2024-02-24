@@ -3,7 +3,12 @@ import { View, Box, Pressable, HStack, Text } from "native-base";
 
 export const Navigation = () => {
   return (
-    <View backgroundColor={"#323232"} width={"100%"} justifyContent={"center"}>
+    <View
+      backgroundColor={"#323232"}
+      width={"100%"}
+      justifyContent={"center"}
+      position={"static"}
+    >
       <HStack justifyContent={"center"} padding={5} alignItems="center">
         <Pressable>
           <Text

@@ -7,7 +7,9 @@ import {
   NativeBaseProvider,
   Divider,
   Pressable,
+  VStack,
 } from "native-base";
+import Lightbulb from "../assets/svg/Lightbulb";
 
 export const Home = () => {
   return (
@@ -78,6 +80,24 @@ export const Home = () => {
               </Box>
             </Pressable>
           </Box>
+        </Box>
+        <Box width={"100%"} height={"60vh"} backgroundColor={"#4d4d4d"}>
+          <VStack justifyContent={"center"} alignItems={"center"}>
+            <Text color={"white"} fontFamily={"Roboto Condensed"} fontSize={25}>
+              RESEARCH
+            </Text>
+            <Lightbulb />
+            <Text
+              color={"white"}
+              fontFamily={"Roboto Condensed"}
+              fontSize={25}
+              noOfLines={2}
+              textAlign={"center"}
+            >
+              I will research your product and create a website {"\n"} that
+              matches your market flawlessly.
+            </Text>
+          </VStack>
         </Box>
       </View>
     </NativeBaseProvider>
