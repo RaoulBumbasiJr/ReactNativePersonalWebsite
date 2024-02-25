@@ -4,8 +4,8 @@ import Svg, { Path } from "react-native-svg";
 function Lightbulb(props) {
   return (
     <Svg
-      width={180}
-      height={265}
+      width={150}
+      height={200}
       viewBox="0 0 180 265"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

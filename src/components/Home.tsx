@@ -8,6 +8,7 @@ import {
   Divider,
   Pressable,
   VStack,
+  HStack,
 } from "native-base";
 import Lightbulb from "../assets/svg/Lightbulb";
 
@@ -82,22 +83,81 @@ export const Home = () => {
           </Box>
         </Box>
         <Box width={"100%"} height={"60vh"} backgroundColor={"#4d4d4d"}>
-          <VStack justifyContent={"center"} alignItems={"center"}>
-            <Text color={"white"} fontFamily={"Roboto Condensed"} fontSize={25}>
-              RESEARCH
-            </Text>
-            <Lightbulb />
-            <Text
-              color={"white"}
-              fontFamily={"Roboto Condensed"}
-              fontSize={25}
-              noOfLines={2}
-              textAlign={"center"}
+          <HStack
+            justifyContent={"center"}
+            alignItems={"center"}
+            paddingTop={20}
+          >
+            <VStack
+              justifyContent={"center"}
+              alignItems={"center"}
+              paddingX={20}
             >
-              I will research your product and create a website {"\n"} that
-              matches your market flawlessly.
-            </Text>
-          </VStack>
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={25}
+              >
+                RESEARCH
+              </Text>
+              <Lightbulb />
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={20}
+                textAlign={"center"}
+              >
+                I will research your product and create a website {"\n"} that
+                matches your market flawlessly.
+              </Text>
+            </VStack>
+            <VStack
+              justifyContent={"center"}
+              alignItems={"center"}
+              paddingX={20}
+            >
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={25}
+              >
+                RESEARCH
+              </Text>
+              <Lightbulb />
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={20}
+                textAlign={"center"}
+              >
+                I will research your product and create a website {"\n"} that
+                matches your market flawlessly.
+              </Text>
+            </VStack>
+            <VStack
+              justifyContent={"center"}
+              alignItems={"center"}
+              paddingX={20}
+            >
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={25}
+              >
+                RESEARCH
+              </Text>
+              <Lightbulb />
+              <Text
+                color={"white"}
+                fontFamily={"Roboto Condensed"}
+                fontSize={20}
+                textAlign={"center"}
+              >
+                I will research your product and create a website {"\n"} that
+                matches your market flawlessly.
+              </Text>
+            </VStack>
+          </HStack>
         </Box>
       </View>
     </NativeBaseProvider>
