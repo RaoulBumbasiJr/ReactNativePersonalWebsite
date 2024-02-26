@@ -11,6 +11,8 @@ import {
   HStack,
 } from "native-base";
 import Lightbulb from "../assets/svg/Lightbulb";
+import Mobile from "../assets/svg/Mobile";
+import Optimize from "../assets/svg/Optimize";
 
 export const Home = () => {
   return (
@@ -121,9 +123,9 @@ export const Home = () => {
                 fontFamily={"Roboto Condensed"}
                 fontSize={25}
               >
-                RESEARCH
+                BUILD
               </Text>
-              <Lightbulb />
+              <Mobile />
               <Text
                 color={"white"}
                 fontFamily={"Roboto Condensed"}
@@ -144,9 +146,9 @@ export const Home = () => {
                 fontFamily={"Roboto Condensed"}
                 fontSize={25}
               >
-                RESEARCH
+                OPTIMIZE
               </Text>
-              <Lightbulb />
+              <Optimize />
               <Text
                 color={"white"}
                 fontFamily={"Roboto Condensed"}
