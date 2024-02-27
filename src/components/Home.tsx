@@ -108,6 +108,7 @@ export const Home = () => {
                 fontFamily={"Roboto Condensed"}
                 fontSize={20}
                 textAlign={"center"}
+                paddingTop={10}
               >
                 I will research your product and create a website {"\n"} that
                 matches your market flawlessly.
@@ -131,9 +132,9 @@ export const Home = () => {
                 fontFamily={"Roboto Condensed"}
                 fontSize={20}
                 textAlign={"center"}
+                paddingTop={10}
               >
-                I will research your product and create a website {"\n"} that
-                matches your market flawlessly.
+                I will build the website you desire.
               </Text>
             </VStack>
             <VStack
@@ -154,12 +155,42 @@ export const Home = () => {
                 fontFamily={"Roboto Condensed"}
                 fontSize={20}
                 textAlign={"center"}
+                paddingTop={10}
               >
-                I will research your product and create a website {"\n"} that
-                matches your market flawlessly.
+                I will build a website fully optimized for web {"\n"} and mobile
+                platforms.
               </Text>
             </VStack>
           </HStack>
+          <Box justifyContent="center" alignItems="center">
+            <Pressable
+              _hover={{ background: "#808080" }}
+              width={250}
+              justifyContent={"center"}
+              alignItems={"center"}
+              alignContent={"center"}
+              marginTop={20}
+            >
+              <Box
+                borderWidth={5}
+                borderColor={"#c7aa8b"}
+                width={250}
+                justifyContent={"center"}
+                alignItems={"center"}
+                alignContent={"center"}
+              >
+                <Text
+                  fontFamily={"Roboto Condensed"}
+                  color="#c7aa8b"
+                  fontSize={20}
+                  paddingX={5}
+                  textAlign={"center"}
+                >
+                  GET IN TOUCH IN ME
+                </Text>
+              </Box>
+            </Pressable>
+          </Box>
         </Box>
       </View>
     </NativeBaseProvider>
